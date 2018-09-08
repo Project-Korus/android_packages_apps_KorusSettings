@@ -2,7 +2,8 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
 	android:title="@string/misc_title"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform">
 
         <PreferenceScreen
             android:key="lock_clock"
@@ -15,5 +16,9 @@
                 android:targetPackage="com.cyanogenmod.lockclock"
                 android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
         </PreferenceScreen>
+
+    <!-- Expanded Desktop -->
+    <org.lineageos.internal.lineageparts.LineagePartsPreference
+        android:key="expanded_desktop_settings" />
 
 </PreferenceScreen>
