@@ -19,7 +19,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/smart_pixels_title" >
 
-    <com.android.settings.korus.SystemSettingEditTextPreference
+    <com.android.settings.korus.SystemSettingSwitchPreference
         android:key="smart_pixels_enable"
         android:title="@string/smart_pixels_enable_title"
         android:summary="@string/smart_pixels_enable_summary"
