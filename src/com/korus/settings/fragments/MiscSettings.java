@@ -19,7 +19,6 @@ import android.support.v7.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
-import com.android.settings.development.DevelopmentSettings;
 import com.android.settings.R;
 
 import java.util.Arrays;
@@ -30,9 +29,6 @@ import com.android.settings.SettingsPreferenceFragment;
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String KEY_LOCK_CLOCK = "lock_clock";
-    private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +36,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         Context mContext = getActivity().getApplicationContext();
 
         addPreferencesFromResource(R.xml.korus_settings_misc);
-
-        // mLockClock
-        if (!DevelopmentSettings.isPackageInstalled(mContext, KEY_LOCK_CLOCK_PACKAGE_NAME)) {
-            getPreferenceScreen().removePreference(findPreference(KEY_LOCK_CLOCK));
-        }
     }
 
     @Override
