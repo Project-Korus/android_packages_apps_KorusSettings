@@ -35,4 +35,8 @@
     <!-- Misc strings -->
     <string name="lockclock_title">Clock widget</string>
     <string name="lockclock_summary">View or change how the \'cLock\' widget will display</string>
+
+    <!-- KorusOTA -->
+    <string name="korus_ota_title">Updates</string>
+    <string name="korus_ota_summary">Check update now</string>
 </resources>
